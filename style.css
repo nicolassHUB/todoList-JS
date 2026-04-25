@@ -1,0 +1,143 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+header div {
+  display: flex;
+  gap: 10px;
+}
+
+/* BOTÕES */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* BOTÃO ESPECIAL */
+#Cadastrar {
+  background: #2196F3;
+}
+
+#Cadastrar:hover {
+  background: #1976D2;
+}
+
+/* TÍTULO */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+#inputTarefa {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTÃO REMOVER */
+li button {
+  background: #f44336;
+}
+
+li button:hover {
+  background: #d32f2f;
+}
+
+/* JANELA SOBRE */
+.about-window {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  text-align: center;
+}
+
+.about-window button {
+  margin-top: 10px;
+  background: #555;
+}
+
+.about-window button:hover {
+  background: #333;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark li {
+  background: #1e1e1e;
+}
+
+body.dark input {
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark .about-window {
+  background: #1e1e1e;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>To-Do</title>
+</head>
+<body>
+  <header>
+    <div>
+      <button id="DarkMode" onclick="buttonScreen()">DarkMode</button>
+      <button id="Sobre" onclick="buttonWindow()">Sobre</button>
+    </div>
+      <button id="Cadastrar" onclick="buttonCadastrar()">Cadastrar</button>
+  </header>
+  <div class="about-window" id="about-window">
+    <h1>Sobre</h1>
+    <p>Esse é um site simples de uma lista de tarefas</p>
+    <button id="Voltar">Voltar</button>
+  </div>
+  <h1>Lista de Tarefas</h1>
+
+  <input type="text" id="inputTarefa" placeholder="Digite uma tarefa">
+  <button id="btnAdicionar" onclick="button()">Adicionar</button>
+
+  <ul id="lista"></ul>
+  <script src="script.js"></script>
+</body>
+</html>
